@@ -1,0 +1,152 @@
+[
+  {
+    "playerId": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c616517/virat-kohli.jpg?d=low&p=gthumb",
+    "role": "Batter",
+    "battingType": "Right-Handed",
+    "bowlingType": "Right-Arm Medium",
+    "biddingPrice": 12000000
+  },
+  {
+    "playerId": 2,
+    "name": "Rohit Sharma",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c616514/rohit-sharma.jpg?d=low&p=gthumb",
+    "role": "Batter",
+    "battingType": "Right-Handed",
+    "bowlingType": "Right-Arm Off Break",
+    "biddingPrice": 11000000
+  },
+  {
+    "playerId": 3,
+    "name": "Shubman Gill",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c616515/shubman-gill.jpg?d=low&p=gthumb",
+    "role": "Batter",
+    "battingType": "Right-Handed",
+    "bowlingType": "Right-Arm Off Break",
+    "biddingPrice": 10000000
+  },
+  {
+    "playerId": 4,
+    "name": "Suryakumar Yadav",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c846028/suryakumar-yadav.jpg?d=low&p=gthumb",
+    "role": "Batter",
+    "battingType": "Right-Handed",
+    "bowlingType": "Right-Arm Medium",
+    "biddingPrice": 9500000
+  },
+  {
+    "playerId": 5,
+    "name": "Rinku Singh",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c846030/rinku-singh.jpg?d=low&p=gthumb",
+    "role": "Batter",
+    "battingType": "Left-Handed",
+    "bowlingType": "Right-Arm Off Break",
+    "biddingPrice": 7000000
+  },
+  {
+    "playerId": 6,
+    "name": "Hardik Pandya",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c846032/hardik-pandya.jpg?d=low&p=gthumb",
+    "role": "All-Rounder",
+    "battingType": "Right-Handed",
+    "bowlingType": "Right-Arm Fast-Medium",
+    "biddingPrice": 10500000
+  },
+  {
+    "playerId": 7,
+    "name": "Ravindra Jadeja",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c616520/ravindra-jadeja.jpg?d=low&p=gthumb",
+    "role": "All-Rounder",
+    "battingType": "Left-Handed",
+    "bowlingType": "Left-Arm Orthodox",
+    "biddingPrice": 10000000
+  },
+  {
+    "playerId": 8,
+    "name": "Axar Patel",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c846033/axar-patel.jpg?d=low&p=gthumb",
+    "role": "All-Rounder",
+    "battingType": "Left-Handed",
+    "bowlingType": "Left-Arm Orthodox",
+    "biddingPrice": 7500000
+  },
+  {
+    "playerId": 9,
+    "name": "Rishabh Pant",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c616524/rishabh-pant.jpg?d=low&p=gthumb",
+    "role": "Wicket-Keeper",
+    "battingType": "Left-Handed",
+    "bowlingType": "Right-Arm Medium",
+    "biddingPrice": 9500000
+  },
+  {
+    "playerId": 10,
+    "name": "KL Rahul",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c616523/kl-rahul.jpg?d=low&p=gthumb",
+    "role": "Wicket-Keeper",
+    "battingType": "Right-Handed",
+    "bowlingType": "Right-Arm Medium",
+    "biddingPrice": 8500000
+  },
+  {
+    "playerId": 11,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c846037/jasprit-bumrah.jpg?d=low&p=gthumb",
+    "role": "Bowler",
+    "battingType": "Right-Handed",
+    "bowlingType": "Right-Arm Fast",
+    "biddingPrice": 11500000
+  },
+  {
+    "playerId": 12,
+    "name": "Mohammed Siraj",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c591952/mohammed-siraj.jpg?d=low&p=gthumb",
+    "role": "Bowler",
+    "battingType": "Right-Handed",
+    "bowlingType": "Right-Arm Fast",
+    "biddingPrice": 8000000
+  },
+  {
+    "playerId": 13,
+    "name": "Arshdeep Singh",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c846038/arshdeep-singh.jpg?d=low&p=gthumb",
+    "role": "Bowler",
+    "battingType": "Left-Handed",
+    "bowlingType": "Left-Arm Fast-Medium",
+    "biddingPrice": 7500000
+  },
+  {
+    "playerId": 14,
+    "name": "Kuldeep Yadav",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c846039/kuldeep-yadav.jpg?d=low&p=gthumb",
+    "role": "Bowler",
+    "battingType": "Left-Handed",
+    "bowlingType": "Left-Arm Chinaman",
+    "biddingPrice": 7000000
+  },
+  {
+    "playerId": 15,
+    "name": "Sanju Samson",
+    "country": "India",
+    "image": "https://static.cricbuzz.com/a/img/v1/i1/c846035/sanju-samson.jpg?d=low&p=gthumb",
+    "role": "Wicket-Keeper",
+    "battingType": "Right-Handed",
+    "bowlingType": "Right-Arm Medium",
+    "biddingPrice": 8000000
+  }
+]

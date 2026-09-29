@@ -7,7 +7,7 @@ import bannerIcon from "../../assets/banner-main.png";
 const Header = () => {
   return (
     <div>
-      <nav className="flex justify-between">
+      <nav className="flex justify-between mb-10">
         <div className="h-[72px] w-[72px] rounded-full">
           <img className="" src={logoIcon} alt="" />
         </div>

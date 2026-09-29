@@ -1,33 +1,31 @@
 import React from "react";
-import shadowImg from "../../../assets/bg-shadow.png";
-import logo from "../../../assets/logo-footer.png";
+import shadowImg from "../../assets/bg-shadow.png";
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#06091A]">
+    <div className="bg-[#06091A] relative">
       {/* subscribe section */}
-      <section className="bg-[#06091A]">
-        <div className="border-2 rounded-2xl border-white bg-white/15 p-6 max-w-7xl mx-auto">
-          <div
-            style={{ backgroundImage: `url(${shadowImg})` }}
-            className="w-full h-[380px] bg-cover bg-center bg-no-repeat bg-white rounded-2xl flex flex-col justify-center items-center gap-5"
-          >
-            <h1 className="font-bold text-[32px]">
-              Subscribe to our Newsletter
-            </h1>
-            <p className="text-[20px] text-gray-700">
-              Get the latest updates and news right in your inbox!
-            </p>
-            <div>
-              <input
-                className="bg-white text-[16px] text-gray-500 border rounded-2xl p-4 mr-6 w-[400px]"
-                type="text"
-                placeholder="Enter your email"
-                name=""
-                id=""
-              />
-              <button
-                className="
+
+      <div className=" absolute -top-52 left-1/2 -translate-x-1/2 border-2 rounded-2xl border-white bg-white/15 p-6 w-7xl mx-auto">
+        <div
+          style={{ backgroundImage: `url(${shadowImg})` }}
+          className="w-full h-[380px] bg-cover bg-center bg-no-repeat bg-white rounded-2xl flex flex-col justify-center items-center gap-5"
+        >
+          <h1 className="font-bold text-[32px]">Subscribe to our Newsletter</h1>
+          <p className="text-[20px] text-gray-700">
+            Get the latest updates and news right in your inbox!
+          </p>
+          <div>
+            <input
+              className="bg-white text-[16px] text-gray-500 border rounded-2xl p-4 mr-6 w-[400px]"
+              type="text"
+              placeholder="Enter your email"
+              name=""
+              id=""
+            />
+            <button
+              className="
     w-[145px] h-[56px]
     rounded-xl
     bg-gradient-to-r from-pink-400 via-purple-300 to-yellow-400
@@ -35,15 +33,15 @@ const Footer = () => {
     text-[24px]
     font-bold
   "
-              >
-                Subscribe
-              </button>
-            </div>
+            >
+              Subscribe
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+
       {/* section footer */}
-      <section className="flex flex-col justify-center items-center gap-5">
+      <section className="flex flex-col justify-center items-center gap-5 pt-64">
         <div>
           <img src={logo} alt="" />
         </div>
@@ -98,7 +96,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-8 shadow-sm">
+        <div className="py-8 ">
           <p className="text-center text-[16px] text-gray-200">
             @2024 Your Company All Rights Reserved.
           </p>
