@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Available_Player from "../Available_Player/Available_Player";
 const Available_Players = ({
+  coins,
   setShow,
   addSelectedPlayers,
   selected_players,
@@ -31,6 +32,7 @@ const Available_Players = ({
       <div className="grid grid-cols-3 gap-3">
         {available_players.map((available_player) => (
           <Available_Player
+            coins={coins}
             addSelectedPlayers={addSelectedPlayers}
             key={available_player.playerId}
             available_player={available_player}

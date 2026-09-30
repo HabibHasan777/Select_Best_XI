@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDeleteForever } from "react-icons/md";
 
-const Selected_Player = ({ selected_player }) => {
+const Selected_Player = ({ selected_player, removeSelectedPlayer }) => {
   const { name, battingType, image } = selected_player;
   return (
     <div className="shadow-sm px-4 py-2 rounded-2xl flex justify-between">
@@ -12,7 +12,12 @@ const Selected_Player = ({ selected_player }) => {
           <p className="text-[16px] text-gray-600">{battingType}</p>
         </div>
       </div>
-      <button className="text-2xl">
+      <button
+        onClick={() => {
+          removeSelectedPlayer(selected_player.playerId);
+        }}
+        className="text-2xl"
+      >
         <MdDeleteForever />
       </button>
     </div>

@@ -4,7 +4,8 @@ import logoIcon from "../../assets/logo.png";
 import banner from "../../assets/bg-shadow.png";
 import bannerIcon from "../../assets/banner-main.png";
 
-const Header = () => {
+const Header = ({ addCoins, coins }) => {
+  console.log(coins);
   return (
     <div>
       <nav className="flex justify-between mb-10">
@@ -29,6 +30,7 @@ const Header = () => {
             <span>
               <BsCoin />
             </span>
+            {coins / 10000000} M
           </div>
         </div>
       </nav>
@@ -47,7 +49,10 @@ const Header = () => {
         <p className="text-2xl text-gray-300">
           Beyond Boundaries Beyond Limits
         </p>
-        <button className="rounded-2xl border-2 border-[#dfff00] bg-[#151515] p-2">
+        <button
+          onClick={addCoins}
+          className="rounded-2xl border-2 border-[#dfff00] bg-[#151515] p-2"
+        >
           <span className="block rounded-2xl bg-[#dfff00] px-7 py-3 text-[16px] font-bold text-black">
             Claim Free Credit
           </span>

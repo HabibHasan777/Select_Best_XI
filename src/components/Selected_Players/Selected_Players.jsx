@@ -1,6 +1,10 @@
 import React from "react";
 import Selected_Player from "../Selected_Player/Selected_Player";
-const Selected_Players = ({ setShow, selected_players }) => {
+const Selected_Players = ({
+  setShow,
+  selected_players,
+  removeSelectedPlayer,
+}) => {
   return (
     <div className="pb-72 space-y-8">
       <div className="flex justify-between mt-12">
@@ -19,7 +23,10 @@ const Selected_Players = ({ setShow, selected_players }) => {
       </div>
       <div className="space-y-4">
         {selected_players.map((selected_player) => (
-          <Selected_Player selected_player={selected_player}></Selected_Player>
+          <Selected_Player
+            removeSelectedPlayer={removeSelectedPlayer}
+            selected_player={selected_player}
+          ></Selected_Player>
         ))}
       </div>
       <div className="border border-black p-2 rounded-3xl w-fit">

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa";
-const Available_Player = ({ available_player, addSelectedPlayers }) => {
+const Available_Player = ({ available_player, addSelectedPlayers, coins }) => {
   const {
     playerId,
     name,
@@ -12,6 +12,13 @@ const Available_Player = ({ available_player, addSelectedPlayers }) => {
     bowlingType,
     biddingPrice,
   } = available_player;
+  const alrt = (coins) => {
+    if (biddingPrice > coins) {
+      alert("insufficient balance");
+    } else {
+      addSelectedPlayers(available_player);
+    }
+  };
   return (
     <div className="p-6 rounded-2xl shadow-sm">
       <img
@@ -41,7 +48,9 @@ const Available_Player = ({ available_player, addSelectedPlayers }) => {
         <div className="flex justify-between">
           <p>Price : ${biddingPrice}</p>
           <button
-            onClick={() => addSelectedPlayers(available_player)}
+            onClick={() => {
+              alrt(coins);
+            }}
             className="text-[14px] font-normal shadow-sm p-4 rounded-xl"
           >
             Choose Player
