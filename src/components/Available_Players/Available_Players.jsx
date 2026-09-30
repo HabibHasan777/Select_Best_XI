@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Available_Player from "../Available_Player/Available_Player";
-const Available_Players = () => {
+const Available_Players = ({
+  setShow,
+  addSelectedPlayers,
+  selected_players,
+}) => {
   const [available_players, setAvailable_players] = useState([]);
+
   useEffect(() => {
     fetch("../../../public/players.json")
       .then((res) => res.json())
@@ -15,14 +20,18 @@ const Available_Players = () => {
           <button className="bg-[#E7FE29] text-[16px] text-black px-4 py-2 rounded-l-xl">
             Available
           </button>
-          <button className="bg-white text-gray-600 text-[16px] px-4 py-2 rounded-r-xl">
-            Selected
+          <button
+            onClick={() => setShow(false)}
+            className="bg-white text-gray-600 text-[16px] px-4 py-2 rounded-r-xl"
+          >
+            Selected {selected_players.length}
           </button>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-3">
         {available_players.map((available_player) => (
           <Available_Player
+            addSelectedPlayers={addSelectedPlayers}
             key={available_player.playerId}
             available_player={available_player}
           ></Available_Player>

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa";
-const Available_Player = ({ available_player }) => {
+const Available_Player = ({ available_player, addSelectedPlayers }) => {
   const {
     playerId,
     name,
@@ -40,7 +40,10 @@ const Available_Player = ({ available_player }) => {
         </div>
         <div className="flex justify-between">
           <p>Price : ${biddingPrice}</p>
-          <button className="text-[14px] font-normal shadow-sm p-4 rounded-xl">
+          <button
+            onClick={() => addSelectedPlayers(available_player)}
+            className="text-[14px] font-normal shadow-sm p-4 rounded-xl"
+          >
             Choose Player
           </button>
         </div>
